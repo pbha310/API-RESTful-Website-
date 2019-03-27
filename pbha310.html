@@ -1,0 +1,123 @@
+
+
+
+<html>
+<head>
+   <title>Tab Example</title>
+   
+</head>
+<body>
+
+<link rel="stylesheet" href="pbha310.css">
+<script type="text/javascript" src="pbha310.js"></script>
+<center><img src = " http://redsox.uoa.auckland.ac.nz/ups/logo.svg" class="logo" align: "top-right" height= "15%" width= "15%" padding = "100px"></img></center>
+<h1 align="center"> Welcome to Computer Science Department</h1>
+   <nav>
+   
+
+      <table style="width: 100%;">
+         <tr>
+         
+            <td id="TabA" class="center" onclick="showTabA();">
+               Home
+            </td>
+            <td id="TabB" class="center" onclick="showTabB();">
+               Courses
+            </td>
+            <td id="TabC" class="center" onclick="showTabC();"> 
+               People
+            </td>
+            <td id="TabD" class="center" onclick="showTabD();">
+               News
+            <td id="TabE" class="center" onclick="showTabE();">
+               Notices
+            <td id="TabF" class="center" onclick="showTabF();">
+               Comments
+            </td>
+         </tr>
+      </table>
+      <hr />
+      <hr />
+   </nav>
+   <div id="SectionA">
+      <section>
+         <p align="center">
+           Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students. 
+         <br>
+         <br>
+         <br>
+         <img src=" http://redsox.uoa.auckland.ac.nz/ups/logo-115x115.png" align="bottom">
+         
+         
+
+         </p>
+      </section>
+   </div>
+   <div id="SectionB">
+      <section>
+         <h2>
+            Computer Science Courses
+         </h2>
+      </section>
+   </div>
+   <div id="SectionC">
+      <section>
+         <h2>
+            Computer Science Department 
+         </h2>
+      </section>
+   </div>
+   <div id="SectionD">
+      <section>
+         <h2>
+            News
+         </h2>
+      </section>
+   </div>
+   <div id="SectionE">
+      <section>
+         <h2>
+            Notices
+         </h2>
+      </section>
+   </div>
+   <div id="SectionF">
+   
+      <section>
+         <h2>
+            Comments
+         </h2>
+         <div class = "guestbook" id = 'comments'>
+             <center><h2 style = "display:inline-block"> Submit Comment </h2> <br></center>
+             <center><h3>Enter Name:</h3></center>
+             <center><input type="text" class = "nameStyle" id = "name"><br></center>
+             <center><h3>Enter Comment:</h3></center>
+             <center><textarea type="text" class = "answers" id='box'></textarea></center>
+             <br>
+             <center><button class = "submit" style="width:10%" onclick="postComment()"> Submit Comment </button></center>
+
+             <h2 align="center">Previous Comments</h2>
+             <center><iframe src= "http://redsox.uoa.auckland.ac.nz/ups/UniProxService.svc/htmlcomments"style = "height:500px" id = "Iframe"></center>
+            </iframe>
+           </div>
+      </section>
+   </div>
+   
+   
+    <table id="showTab"></table>
+   
+   
+            
+         
+         
+    <div id = "commentBox"></div>
+    <div id = "show_data"></div>
+   
+
+
+   
+</body>
+</html>
+
+
+
